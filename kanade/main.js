@@ -1,0 +1,3 @@
+function runAllCode() {
+alert("hi");
+}

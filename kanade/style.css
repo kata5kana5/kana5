@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff0f5;
+    position: relative;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    font-size: 20rem;
+    color: rgba(255, 192, 203, 0.2);
+    z-index: 0;
+    animation: float 4s ease-in-out infinite;
+}
+
+.run-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #ff6b8b;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.run-button:hover {
+    background-color: #ff4757;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+}
